@@ -1,0 +1,19 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:devnc": "vuepress dev docs --no-cache",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": "git@github.com:ppambler/blog.git",
+  "author": "Ambler <allinlbj@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.0.4"
+  },
+  "dependencies": {
+    "markdown-it-task-checkbox": "^1.0.6"
+  }
+}

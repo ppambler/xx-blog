@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="utf-8">
+  <title>01-测试gitalk</title>
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+</head>
+
+<body>
+  <div id="gitalk-container"></div>
+  <script>
+    let gitalk = new Gitalk({
+      clientID: "9608662e90dd96815e0d",
+      clientSecret: "32fe8f8cf9d9ce17dfac6970bfd67c7c1ad88072",
+      repo: "vuepress-blog",
+      owner: "ppambler",
+      admin: [
+        "ppambler"
+      ],
+      id: window.location.pathname, // Ensure uniqueness and length less than 50
+      distractionFreeMode: false // Facebook-like distraction free mode
+    });
+    gitalk.render("gitalk-container");
+  </script>
+</body>
+
+</html>
