@@ -12,6 +12,7 @@ module.exports = {
     nav: [
       { text: '主页', link: '/' },
       { text: 'Tools', link: '/Tools/' },
+      { text: 'JavaScript', link: '/js/' },
       { text: 'GitHub', link: 'https://github.com/ppambler/blog' },
     ],
     sidebar: [
@@ -39,6 +40,30 @@ module.exports = {
               '/tools/gulp/01',
             ]
           }
+        ]
+      },
+      {
+        title: 'JavaScript',   // 必要的
+        path: '/js/',      // 可选的, 应该是一个绝对路径
+        collapsable: true, // 可选的, 默认值是 true,
+        sidebarDepth: 2,    // 可选的, 默认值是 1
+        children: [
+          {
+            title: 'JS',
+            path: '/js/normal/',
+            sidebarDepth: 2,
+            children: [
+
+            ]
+          },
+          {
+            title: '译',
+            path: '/js/translation/',
+            sidebarDepth: 2,
+            children: [
+
+            ]
+          },
         ]
       }
     ],
