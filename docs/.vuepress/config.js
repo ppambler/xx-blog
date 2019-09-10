@@ -9,63 +9,22 @@ module.exports = {
   dest: './docs-dist',
   themeConfig: {
     lastUpdated: 'Last Updated',
+    sidebar: 'auto',
     nav: [
       { text: '主页', link: '/' },
-      { text: 'Tools', link: '/Tools/' },
-      { text: 'JavaScript', link: '/js/' },
-      { text: 'GitHub', link: 'https://github.com/ppambler/blog' },
-    ],
-    sidebar: [
       {
-        title: 'Tools',   // 必要的
-        path: '/tools/',      // 可选的, 应该是一个绝对路径
-        collapsable: true, // 可选的, 默认值是 true,
-        sidebarDepth: 2,    // 可选的, 默认值是 1
-        children: [
-          {
-            title: 'VuePress',
-            path: '/tools/vuepress/',
-            sidebarDepth: 2,
-            children: [
-              '/tools/vuepress/faq',
-              '/tools/vuepress/01',
-              '/tools/vuepress/02',
-            ]
-          },
-          {
-            title: 'Gulp',
-            path: '/tools/gulp/',
-            sidebarDepth: 2,
-            children: [
-              '/tools/gulp/01',
-            ]
-          }
+        text: 'Tools', items: [
+          { text: 'VuePress', link: '/tools/vuepress/' },
+          { text: 'Gulp', link: '/tools/gulp/' }
         ]
       },
       {
-        title: 'JavaScript',   // 必要的
-        path: '/js/',      // 可选的, 应该是一个绝对路径
-        collapsable: true, // 可选的, 默认值是 true,
-        sidebarDepth: 2,    // 可选的, 默认值是 1
-        children: [
-          {
-            title: 'JS',
-            path: '/js/normal/',
-            sidebarDepth: 2,
-            children: [
-
-            ]
-          },
-          {
-            title: '译',
-            path: '/js/translation/',
-            sidebarDepth: 2,
-            children: [
-
-            ]
-          },
+        text: 'JavaScript', items: [
+          { text: 'JS', link: '/js/normal/' },
+          { text: '译', link: '/js/translation/' },
         ]
-      }
+      },
+      { text: 'GitHub', link: 'https://github.com/ppambler/blog' },
     ],
   },
   markdown: {

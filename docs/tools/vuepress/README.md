@@ -3,8 +3,8 @@
 ### ◇目录
 
 - [faq](./faq.md)
-- [01-  VuePress 简单入门](./01.md)
-- [02-  VuePress 进阶](./02.md)
+- [01-VuePress 简单入门](./01.md)
+- [02-VuePress 进阶](./02.md)
 
 ### ◇TODO
 
